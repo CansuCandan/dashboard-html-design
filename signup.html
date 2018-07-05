@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../../../favicon.ico">
+
+    <title>KAYDOL</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" type="text/css" href="signup.css">
+
+</head>
+<body class="text-center">
+<form class="form-signup" action="" method="post">
+  <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+  <h1 class="h3 mb-3 font-weight-normal">KAYDOL</h1>
+  <label for="inputEmail" class="sr-only">Email address</label>
+  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+  <label for="inputPassword" class="sr-only">Password</label>
+  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+  <div class="checkbox mb-3">
+
+
+  <label for="inputPassword" class="sr-only">Please re-enter your password</label>
+  <input type="password" id="inputPassword2" class="form-control" placeholder="Please re-enter your password" required>
+
+  <div class="checkbox mb-3">
+
+
+  <input type="checkbox"  id="lisans" value="lisans-accept"><a href="#" onclick="kontrol()"> Lisans sözleşmesini kabul ediyorum</a>
+
+
+
+  </div>
+
+
+
+    <script type="text/javascript">
+      function kontrol()
+
+      {
+        console.log("kontrole girildi");
+        var inputPassword,inputPassword2,lisans,text;
+        var canan=document.getElementById("lisans");
+        var pass1=document.getElementById("inputPassword");
+        var pass2=document.getElementById("inputPassword2");
+
+
+        if (canan.checked==true) {
+
+          alert("lisansı onayladınız...");
+        }
+        else{
+          alert("lisans alanı boş bırakılamaz");
+
+
+        }
+
+        if(!(pass1==pass2)) {
+          alert("şifreler aynı değil...");
+          return false;
+
+        }
+
+        document.getElementById("inputPassword,inputPassword2").value;
+
+        return true;
+      }
+
+    </script>
+
+  <button class="btn btn-lg btn-primary btn-block" id="myCheck" type="submit"><a href="#" onclick="kontrol()">KAYDOL</a></button>
+  <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+
+</form>
+
+
+<body>
+
+
+  </body>
+</html>
